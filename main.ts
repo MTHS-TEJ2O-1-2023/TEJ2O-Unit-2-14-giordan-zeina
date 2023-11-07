@@ -35,16 +35,16 @@ input.onButtonPressed(Button.A, function () {
 // when "B" is pressed, the pixels move up in a diagnal
 input.onButtonPressed(Button.B, function () {
     // setup
-    basic.clearScreen()
-    loopCounter = 5
-    sprite = game.createSprite(5, 5)
+  basic.clearScreen()
+  loopCounter = 5
+  sprite = game.createSprite(5, 5)
 
-    while (loopCounter >= 0) {
-        sprite.set(LedSpriteProperty.X, loopCounter)
-        sprite.set(LedSpriteProperty.Y, loopCounter)
-        loopCounter = loopCounter - 1
-        basic.pause(500)
+  while (loopCounter >= 0) {
+    sprite.set(LedSpriteProperty.X, loopCounter)
+    sprite.set(LedSpriteProperty.Y, loopCounter)
+    loopCounter = loopCounter - 1
+    basic.pause(500)
     }
-    sprite.delete()
-    basic.showIcon(IconNames.Happy)
+  sprite.delete()
+  basic.showIcon(IconNames.Happy)
 })
