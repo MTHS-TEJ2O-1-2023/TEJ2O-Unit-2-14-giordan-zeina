@@ -15,7 +15,7 @@ basic.showIcon(IconNames.Happy)
 basic.pause(500)
 basic.clearScreen()
 
-// when "A" is pressed, the pixels move down in a diagnol
+// When "A" is pressed, the pixels move down in a diagnol
 input.onButtonPressed(Button.A, function () {
   // setup
   basic.clearScreen()
